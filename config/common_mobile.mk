@@ -14,6 +14,10 @@ PRODUCT_PACKAGES += \
     Glimpse \
     LatinIME
 
+# FaceEnroll - Settings RRO
+ PRODUCT_PACKAGES += \
+     FaceEnrollSettingsOverlay
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
