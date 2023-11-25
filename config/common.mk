@@ -301,6 +301,11 @@ CUSTOM_LOCALES += \
     cy_GB \
     fur_IT
 
+# Pixel-framework
+ifeq ($(INCLUDE_PIXEL_FRAMEWORK),true)
+$(call inherit-product, vendor/pixel-framework/config.mk)
+endif
+
 # Bootanimation
 include vendor/infinity/config/bootanimation.mk
 
