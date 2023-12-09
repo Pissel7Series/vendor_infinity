@@ -23,4 +23,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Disable mobile data by default
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.android.mobiledata=false
+    ro.com.android.mobiledata=true
+
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/infinity/CarrierSettings/overlay
