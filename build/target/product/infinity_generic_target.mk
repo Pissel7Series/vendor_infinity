@@ -16,3 +16,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
+
+# Pixel APNs
+PRODUCT_COPY_FILES += \
+    vendor/infinity/telephony/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
