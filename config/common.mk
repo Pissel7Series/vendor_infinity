@@ -289,6 +289,9 @@ CUSTOM_LOCALES += \
 # Bootanimation
 include vendor/infinity/config/bootanimation.mk
 
+# Fonts
+include vendor/infinity/config/fonts.mk
+
 # Version
 include vendor/infinity/config/version.mk
 
