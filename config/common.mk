@@ -295,10 +295,10 @@ PRODUCT_COPY_FILES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
     Launcher3QuickStep \
-    Settings
-    
+    SettingsGoogle \
+    SystemUIGoogle
+
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.boot=verify \
     pm.dexopt.first-boot=quicken \
@@ -309,7 +309,6 @@ ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.ab-ota=quicken
 endif
-    
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
