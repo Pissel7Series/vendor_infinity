@@ -205,10 +205,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/infinity/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
-
 # ThemeOverlays
 include packages/overlays/Themes/themes.mk
 
