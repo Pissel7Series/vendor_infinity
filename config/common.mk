@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
 
 # Gapps
 ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/google/gms/config.mk)
+$(call inherit-product, vendor/gms/gms_full.mk)
 
 DONT_DEXPREOPT_PREBUILTS := true
 
