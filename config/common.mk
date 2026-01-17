@@ -191,6 +191,10 @@ include vendor/infinity/config/bootanimation.mk
 PRODUCT_PACKAGES += \
     framework_compatibility_matrix.lineage.xml
 
+# Build Manifest
+PRODUCT_PACKAGES += \
+    build-manifest.xml
+
 # Lineage packages
 ifeq ($(PRODUCT_IS_ATV),)
 PRODUCT_PACKAGES += \
