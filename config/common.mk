@@ -359,7 +359,8 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     NfcOverlay \
-    PermissionControllerOverlay
+    PermissionControllerOverlay \
+    SBHeightOverlay
 
 # Translations
 CUSTOM_LOCALES += \
