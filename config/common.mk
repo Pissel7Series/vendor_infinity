@@ -205,7 +205,8 @@ endif
 
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
-    LineageParts
+    LineageParts \
+    LineageSetupWizard
 endif
 
 PRODUCT_PACKAGES += \
@@ -281,7 +282,7 @@ PRODUCT_COPY_FILES += \
 
 # Gapps
 ifeq ($(WITH_GAPPS),true)
-include vendor/google/gms/config.mk
+include vendor/gms/products/gms.mk
 
 ifeq ($(INFINITY_BUILD_TYPE),OFFICIAL)
 PRODUCT_PACKAGES += \
@@ -400,7 +401,6 @@ $(call inherit-product, vendor/infinity/audio/audio.mk)
 
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
-    setupwizard.theme=glif_v4 \
     setupwizard.feature.day_night_mode_enabled=true
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/infinity/overlay/no-rro
