@@ -55,7 +55,8 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/permissions/privapp-permissions-google-system.xml \
     system/etc/sysconfig/google-hiddenapi-package-allowlist.xml \
     system/media/bootanimation.zip \
-    system/priv-app/TagGoogle/TagGoogle.apk
+    system/priv-app/TagGoogle/TagGoogle.apk \
+    system/lib/libtensorflowlite_jni.so
 
 
 # Themes
